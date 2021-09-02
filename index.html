@@ -2,163 +2,299 @@
 <html lang="es-MX " Cache-Control: max-age=31536000>
 
 <head>
-    <title>Portafolio, Luis Angel Maciel</title>
+    <title>Toxel CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Luis Angel Maciel, Diseñador grafico y web con experiencia en las herramientas de corel draw y el buscador de google. Como plus es mercadologo. ">
+    <meta name="description" content="Toxel is a very good option for CSS styles. Put it to good use! ">
     <meta http-equiv="Content-Type " content="text/html; charset=UTF-8 ">
     <meta http-equiv="content-encoding " content="gzip ">
     <meta http-equiv="X-UA-Compatible " content="IE=edge ">
     <meta http-equiv="x-dns-prefetch-control " content="on ">
     <meta http-equiv="vary-header " content="Accept-Encoding ">
-    <meta name="keywords " content="diseñador web chingon, diseño luz neon, goku neon, power ranger, diseño geek,">
+    <meta name="keywords " content="toxel css, css style, styles css, option style css, new css">
     <meta name="author " content="@luisangelmaciel">
-    <meta name="generator " content="@luisangelmaciel">
-    <meta name="rights " content="®@luisangelmaciel ">
+    <meta name="generator " content="Toxel">
+    <meta name="rights " content="®Toxel CSS ">
     <meta name="theme-color " content="#017dbb ">
     <meta name="robots " content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large " />
-    <link rel="canonical " href="">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="canonical " href="http://luisangelmaciel.github.io/toxel/">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://unpkg.com/sprite-spirit@1.0.0/scss/sprite-spirit.scss">
 
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
 
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
 
     <style>
         .lato {
-            font-family: Lato;
+            font-family: "Lato", sans-serif;
+        }
+        
+        .oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a::after {
+            color: black;
+        }
+        
+        .text-toxel {
+            color: #017db0;
+        }
+        
+        .body-toxel {
+            text-align: center;
+            padding: 0 25px;
+            margin: 10px 0;
+            font-weight: 800;
+            position: relative;
+            display: block;
+            outline: none;
+            font-size: 2em;
+            background: transparent;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="w3-container">
-        <h1 class="lato">CSS</h1>
-    </div>
+    <header>
+        <div class="w3-container">
+            <h1 class="oswald ">Toxel CSS</h1>
+            <h3>Toxel is a very good option for CSS styles. Put it to good use!</h3>
+        </div>
+    </header>
 
+    <hr>
 
-    <div class="w3-container  ">
-        <div class="w3-row w3-center ">
-            <div class="w3-third ">
-                <div>
-                    <style>
-                        .slash-color {
-                            font-family: 'Oswald', sans-serif;
-                            font-weight: 800;
-                            text-align: center;
-                            font-size: 100px;
-                            padding: 0 25px;
-                            font-family: 'Lato', sans-serif;
-                            font-weight: 800;
-                            background: transparent;
-                            cursor: pointer;
-                            position: relative;
-                            display: inline-block;
-                            outline: none;
-                            font-size: 2em;
-                            color: transparent;
-                            background: repeating-linear-gradient( -45deg, #ff1f8f 0% 50%, #000 50% 100%);
-                            -webkit-background-clip: text;
-                        }
-                    </style>
-
-                    <p class="slash-color">.slash-color</p>
-                </div>
-
-                <div>
-                    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js">
-                    </script>
-
-                    <style>
-                    .confetti {
-                            width: 100%;
-                            display: block;
-                            margin: 10px 0;
-                            padding: 10px;
-                            border: 0;
-                            background-color: inherit;
-                            color: rgb(0, 0, 0);
-                            /*blanco para que solo quede el emoji */
-                            border-radius: 3px;
-                            transition: all .2s;
-                            cursor: pointer;
-                        }
-                        
-                        .confetti:active {
-                            transform: scale(.6);
-                        }
-                        
-                        .bodyconfetti {
-                            font-family: 'Oswald', sans-serif;
-                            font-weight: 800;
-                            text-align: center;
-                            font-size: 100px;
-                            padding: 0 25px;
-                            font-family: 'Lato', sans-serif;
-                            font-weight: 800;
-                            background: transparent;
-                            cursor: pointer;
-                            position: relative;
-                            display: inline-block;
-                            outline: none;
-                            font-size: 2em;
-                            color: transparent;
-                            background: repeating-linear-gradient( -45deg, #ff1f8f 0% 50%, #000 50% 100%);
-                            -webkit-background-clip: text;
-                        }
-                    }
-                    </style>
-
-                    <p class="buttonconfetti confetti bodyconfetti" onclick="throwConfetti()">.confettit (touch me) 🎉</p>
-
-
-                    <script>
-                        function randomInRange(min, max) {
-                            return Math.random() * (max - min) + min;
-                        }
-
-                        function throwConfetti() {
-                            confetti({
-                                angle: randomInRange(55, 125),
-                                spread: randomInRange(50, 70),
-                                particleCount: randomInRange(50, 100),
-                                origin: {
-                                    y: 0.6
+    <main>
+        <div class="w3-container body-toxel lato ">
+            <div class="w3-row w3-center ">
+                <!-- 1/3 -->
+                <section>
+                    <div class="w3-third ">
+                        <!-- .slash-color -->
+                        <div>
+                            <style>
+                                .slash-color {
+                                    color: transparent;
+                                    background: repeating-linear-gradient( -45deg, #ff1f8f 0% 50%, #000 50% 100%);
+                                    -webkit-background-clip: text;
                                 }
-                            });
-                        }
-                    </script>
+                            </style>
 
-                </div>
-            </div>
+                            <p class="slash-color ">.slash-color</p>
+                        </div>
 
-            <div class="w3-third ">
-                <div>
-                    <p class="slash-color">.slash-color</p>
-                </div>
-            </div>
+                        <!-- .confetti -->
+                        <div>
+                            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js ">
+                            </script>
+
+                            <style>
+                            .confetti {
+                                    background-color: inherit;
+                                    color: rgb(0, 0, 0);
+                                    /*blanco para que solo quede el emoji */
+                                    width: 100%;
+                                    border: 0;
+                                    border-radius: 3px;
+                                    transition: all .2s;
+                                    cursor: pointer;
+                                }
+                                
+                                .confetti:active {
+                                    transform: scale(.6);
+                                }
+                                
+                                .bodyconfetti {
+                                    background: transparent;
+                                    cursor: pointer;
+                                    color: transparent;
+                                    background: repeating-linear-gradient( -45deg, #b30505 0% 50%, #000 50% 100%);
+                                    -webkit-background-clip: text;
+                                }
+                            }
+                            </style>
+
+                            <p class="confetti bodyconfetti " onclick="throwConfetti() ">.confetti <small> <i class="fa fa-heart "></i> ¡touch me! </small> </p>
+                            <!-- 🎉 -->
+
+                            <script>
+                                function randomInRange(min, max) {
+                                    return Math.random() * (max - min) + min;
+                                }
+
+                                function throwConfetti() {
+                                    confetti({
+                                        angle: randomInRange(55, 125),
+                                        spread: randomInRange(50, 70),
+                                        particleCount: randomInRange(50, 100),
+                                        origin: {
+                                            y: 0.6
+                                        }
+                                    });
+                                }
+                            </script>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 2/3 -->
+                <section>
+                    <div class="w3-third ">
+                        <!-- .fade-and-grow -->
+                        <div>
+                            <style>
+                                .fade-and-grow .linktext-fade-and-grow {
+                                    cursor: pointer;
+                                    background: transparent;
+                                    outline: none;
+                                    padding: 0 25px;
+                                    text-align: center;
+                                    position: relative;
+                                    z-index: 2;
+                                    color: #860eb6;
+                                    text-shadow: 1px 1px 2px rgb(42, 252, 15), 0 0 25px white, 0 0 5px rgb(5, 240, 122);
+                                    text-decoration: none;
+                                    transition: 0.3s ease-in-out;
+                                    -webkit-transition: 0.3s ease-in-out;
+                                    transition-delay: 0s;
+                                    -webkit-transition-delay: 0s;
+                                }
+                                
+                                .fade-and-grow .linktext-fade-and-grow:before {
+                                    display: inline-block;
+                                    content: attr(data-text);
+                                    position: absolute;
+                                    top: 0px;
+                                    transition: 0.3s ease-in-out;
+                                    -webkit-transition: 0.3s ease-in-out;
+                                    transition-delay: 0.15s;
+                                    -webkit-transition-delay: 0.15s;
+                                    opacity: 1;
+                                    color: #860eb6;
+                                }
+                                
+                                .fade-and-grow .item-fade-and-grow {
+                                    position: relative;
+                                    display: inline-block;
+                                    padding-top: 15px;
+                                    margin-left: 25px;
+                                    margin-right: 25px;
+                                    background: transparent;
+                                    z-index: 2;
+                                    color: #860eb6;
+                                    text-decoration: none;
+                                    transition: 0.3s ease-in-out;
+                                    -webkit-transition: 0.3s ease-in-out;
+                                }
+                                
+                                .fade-and-grow .item-fade-and-grow:hover .linktext-fade-and-grow {
+                                    transform: scale(1.3);
+                                    -webkit-transform: scale(1.3);
+                                    transition-delay: 0.15s;
+                                    -webkit-transition-delay: 0.15s;
+                                }
+                                
+                                .fade-and-grow .item-fade-and-grow:hover .linktext-fade-and-grow:before {
+                                    transform: translateY(30px);
+                                    -webkit-transform: translateY(30px);
+                                    transition-delay: 0s;
+                                    -webkit-transition-delay: 0s;
+                                    opacity: 0;
+                                }
+                            </style>
 
 
-            <div class="w3-third ">
-                <div>
-                    <p class="slash-color">.slash-color</p>
-                </div>
+                            <section class="fade-and-grow">
+                                <div class="item-fade-and-grow">
+                                    <div data-text=".fade-and-grow" class="linktext-fade-and-grow">.fade-and-grow</div>
+                                </div>
+                            </section>
+
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <!-- 3/3 -->
+                <section>
+                    <div class="w3-third ">
+                        <!-- .heartbeat.-->
+                        <div>
+                            <script src="https://use.fontawesome.com/dca02e5d5b.js">
+                            </script>
+
+
+                            <style>
+                                .heartbeat {
+                                    color: #e80d2e;
+                                    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px white, 0 0 5px rgb(197, 155, 160);
+                                    animation: heartbeat 36s infinite;
+                                }
+                                
+                                .heartbeat:hover {
+                                    color: #017db0;
+                                    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px white, 0 0 5px rgb(177, 227, 240);
+                                    animation: heartbeat 36s infinite;
+                                }
+                                /*Beating heart animation keyframe*/
+                                
+                                @keyframes heartbeat {
+                                    0% {
+                                        transform: scale(1.0);
+                                    }
+                                    5% {
+                                        transform: scale(1.3);
+                                    }
+                                    10% {
+                                        transform: scale(1.1);
+                                    }
+                                    20% {
+                                        transform: scale(1.5);
+                                    }
+                                    30% {
+                                        transform: scale(1.0);
+                                    }
+                                    100% {
+                                        transform: scale(1.0);
+                                    }
+                                }
+                            </style>
+
+
+                            <i class="fa fa-heart heartbeat oswald"><b>.heartbeat</b></i>
+                        </div>
+
+                        <!-- .-->
+                        <div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
 
+    <hr>
 
-
-
-
-
-
-
+    <center>
+        <footer>
+            <b>Toxel CSS</b>
+            <br>Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
+            <a href="https://twitter.com/luisangelmaciel" target="_blank"><b>@luisangel<span class="text-toxel">maciel</b></span></a>
+        </footer>
+    </center>
 </body>
+
+</html>
 
 </html>
