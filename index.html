@@ -18,370 +18,298 @@
     <meta name="robots " content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large " />
 
     <link rel="canonical " href="http://luisangelmaciel.github.io/toxel/">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/toxel.css">
+    <!--  <link rel="stylesheet" href="http://luisangelmaciel.github.io/toxel/css/toxel.css"> -->
+
+    <!-- rating -->
+    <link rel="stylesheet" href="css/normalize-5-0.min.css">
+
 
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
 
-
-    <style>
-        .lato {
-            font-family: "Lato", sans-serif;
-        }
-        
-        .oswald {
-            font-family: 'Oswald', sans-serif;
-        }
-        
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        a::after {
-            color: black;
-        }
-        
-        .text-toxel {
-            color: #017db0;
-        }
-        
-        .body-toxel {
-            text-align: center;
-            padding: 0 25px;
-            margin: 10px 0;
-            font-weight: 800;
-            position: relative;
-            display: block;
-            outline: none;
-            font-size: 2em;
-            background: transparent;
-        }
-    </style>
+    <script src="https://use.fontawesome.com/dca02e5d5b.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js ">
+    </script>
 </head>
 
-<body>
+<body class="toxel-container   ">
 
     <header>
-        <div class="w3-container">
+        <div class="toxel-container">
             <h1 class="oswald ">Toxel CSS</h1>
-            <h3>Toxel is a very good option for CSS styles. Put it to good use!</h3>
+            <p>Toxel is a very good option for CSS styles. Put it to good use!</p>
         </div>
     </header>
 
     <hr>
 
     <main>
-        <div class="w3-container body-toxel lato ">
-            <div class="w3-row w3-center ">
-                <!-- 1/3 -->
+        <div class="toxel-container   ">
+            <div class=" toxel-css">
+
                 <section>
-                    <div class="w3-third ">
-                        <!-- .slash-color -->
-                        <div>
-                            <style>
-                                .slash-color {
-                                    color: transparent;
-                                    background: repeating-linear-gradient( -45deg, #ff1f8f 0% 50%, #000 50% 100%);
-                                    -webkit-background-clip: text;
-                                }
-                            </style>
+                    <!-- .slash-color -->
+                    <p class="slash-color ">.slash-color</p>
 
-                            <p class="slash-color ">.slash-color</p>
-                        </div>
+                    <!-- .confetti -->
+                    <div class="confetti" onclick="throwConfetti() "> .confetti <small>  ¡touch me!  </small> 🎉 </div> <br>
 
-                        <!-- .confetti -->
-                        <div>
-                            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js ">
-                            </script>
+                    <!-- .heartbeat.-->
+                    <b> <i class="fa fa-heart heartbeat "></i> .heartbeat </b>
 
-                            <style>
-                            .confetti {
-                                    background-color: inherit;
-                                    color: rgb(0, 0, 0);
-                                    /*blanco para que solo quede el emoji */
-                                    width: 100%;
-                                    border: 0;
-                                    border-radius: 3px;
-                                    transition: all .2s;
-                                    cursor: pointer;
-                                }
-                                
-                                .confetti:active {
-                                    transform: scale(.6);
-                                }
-                                
-                                .bodyconfetti {
-                                    background: transparent;
-                                    cursor: pointer;
-                                    color: transparent;
-                                    background: repeating-linear-gradient( -45deg, #b30505 0% 50%, #000 50% 100%);
-                                    -webkit-background-clip: text;
-                                }
-                            }
-                            </style>
-
-                            <p class="confetti bodyconfetti " onclick="throwConfetti() ">.confetti <small> <i class="fa fa-heart "></i> ¡touch me! </small> </p>
-                            <!-- 🎉 -->
-
-                            <script>
-                                function randomInRange(min, max) {
-                                    return Math.random() * (max - min) + min;
-                                }
-
-                                function throwConfetti() {
-                                    confetti({
-                                        angle: randomInRange(55, 125),
-                                        spread: randomInRange(50, 70),
-                                        particleCount: randomInRange(50, 100),
-                                        origin: {
-                                            y: 0.6
-                                        }
-                                    });
-                                }
-                            </script>
-
-                        </div>
-
-                        <!-- .-->
-                        <div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- 2/3 -->
-                <section>
-                    <div class="w3-third ">
-                        <!-- .fade-and-grow -->
-                        <div>
-                            <style>
-                                .fade-and-grow .linktext-fade-and-grow {
-                                    cursor: pointer;
-                                    background: transparent;
-                                    outline: none;
-                                    padding: 0 25px;
-                                    text-align: center;
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #860eb6;
-                                    text-shadow: 1px 1px 2px rgb(42, 252, 15), 0 0 25px white, 0 0 5px rgb(5, 240, 122);
-                                    text-decoration: none;
-                                    transition: 0.3s ease-in-out;
-                                    -webkit-transition: 0.3s ease-in-out;
-                                    transition-delay: 0s;
-                                    -webkit-transition-delay: 0s;
-                                }
-                                
-                                .fade-and-grow .linktext-fade-and-grow:before {
-                                    display: inline-block;
-                                    content: attr(data-text);
-                                    position: absolute;
-                                    top: 0px;
-                                    transition: 0.3s ease-in-out;
-                                    -webkit-transition: 0.3s ease-in-out;
-                                    transition-delay: 0.15s;
-                                    -webkit-transition-delay: 0.15s;
-                                    opacity: 1;
-                                    color: #860eb6;
-                                }
-                                
-                                .fade-and-grow .item-fade-and-grow {
-                                    position: relative;
-                                    display: inline-block;
-                                    padding-top: 15px;
-                                    margin-left: 25px;
-                                    margin-right: 25px;
-                                    background: transparent;
-                                    z-index: 2;
-                                    color: #860eb6;
-                                    text-decoration: none;
-                                    transition: 0.3s ease-in-out;
-                                    -webkit-transition: 0.3s ease-in-out;
-                                }
-                                
-                                .fade-and-grow .item-fade-and-grow:hover .linktext-fade-and-grow {
-                                    transform: scale(1.3);
-                                    -webkit-transform: scale(1.3);
-                                    transition-delay: 0.15s;
-                                    -webkit-transition-delay: 0.15s;
-                                }
-                                
-                                .fade-and-grow .item-fade-and-grow:hover .linktext-fade-and-grow:before {
-                                    transform: translateY(30px);
-                                    -webkit-transform: translateY(30px);
-                                    transition-delay: 0s;
-                                    -webkit-transition-delay: 0s;
-                                    opacity: 0;
-                                }
-                            </style>
-
-
-                            <section class="fade-and-grow">
-                                <div class="item-fade-and-grow">
-                                    <div data-text=".fade-and-grow" class="linktext-fade-and-grow">.fade-and-grow</div>
-                                </div>
-                            </section>
-
-                        </div>
-
-                        <!-- .txt-type-->
-                        <div>
-                            <p><b>.txt-</b>
-                                <span class="txt-type" data-wait="300" data-words='["type", "tYPE", "TypE", "Type"]'></span>
-                            </p>
-                            <script>
-                                // ES6 Class
-                                class TypeWriter {
-                                    constructor(txtElement, words, wait = 3000) {
-                                        this.txtElement = txtElement;
-                                        this.words = words;
-                                        this.txt = '';
-                                        this.wordIndex = 0;
-                                        this.wait = parseInt(wait, 10);
-                                        this.type();
-                                        this.isDeleting = false;
-                                    }
-
-                                    type() {
-                                        // Current index of word
-                                        const current = this.wordIndex % this.words.length;
-                                        // Get full text of current word
-                                        const fullTxt = this.words[current];
-
-                                        // Check if deleting
-                                        if (this.isDeleting) {
-                                            // Remove char
-                                            this.txt = fullTxt.substring(0, this.txt.length - 1);
-                                        } else {
-                                            // Add char
-                                            this.txt = fullTxt.substring(0, this.txt.length + 1);
-                                        }
-
-                                        // Insert txt into element
-                                        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-                                        // Initial Type Speed
-                                        let typeSpeed = 300;
-
-                                        if (this.isDeleting) {
-                                            typeSpeed /= 2;
-                                        }
-
-                                        // If word is complete
-                                        if (!this.isDeleting && this.txt === fullTxt) {
-                                            // Make pause at end
-                                            typeSpeed = this.wait;
-                                            // Set delete to true
-                                            this.isDeleting = true;
-                                        } else if (this.isDeleting && this.txt === '') {
-                                            this.isDeleting = false;
-                                            // Move to next word
-                                            this.wordIndex++;
-                                            // Pause before start typing
-                                            typeSpeed = 500;
-                                        }
-
-                                        setTimeout(() => this.type(), typeSpeed);
-                                    }
-                                }
-
-
-                                // Init On DOM Load
-                                document.addEventListener('DOMContentLoaded', init);
-
-                                // Init App
-                                function init() {
-                                    const txtElement = document.querySelector('.txt-type');
-                                    const words = JSON.parse(txtElement.getAttribute('data-words'));
-                                    const wait = txtElement.getAttribute('data-wait');
-                                    // Init TypeWriter
-                                    new TypeWriter(txtElement, words, wait);
-                                }
-                            </script>
-                        </div>
-
-                        <!-- .-->
-                        <div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- 3/3 -->
-                <section>
-                    <div class="w3-third ">
-                        <!-- .heartbeat.-->
-                        <div>
-                            <script src="https://use.fontawesome.com/dca02e5d5b.js">
-                            </script>
-
-
-                            <style>
-                                .heartbeat {
-                                    color: #e80d2e;
-                                    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px white, 0 0 5px rgb(197, 155, 160);
-                                    animation: heartbeat 36s infinite;
-                                }
-                                
-                                .heartbeat:hover {
-                                    color: #017db0;
-                                    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px white, 0 0 5px rgb(177, 227, 240);
-                                    animation: heartbeat 36s infinite;
-                                }
-                                /*Beating heart animation keyframe*/
-                                
-                                @keyframes heartbeat {
-                                    0% {
-                                        transform: scale(1.0);
-                                    }
-                                    5% {
-                                        transform: scale(1.3);
-                                    }
-                                    10% {
-                                        transform: scale(1.1);
-                                    }
-                                    20% {
-                                        transform: scale(1.5);
-                                    }
-                                    30% {
-                                        transform: scale(1.0);
-                                    }
-                                    100% {
-                                        transform: scale(1.0);
-                                    }
-                                }
-                            </style>
-
-
-                            <i class="fa fa-heart heartbeat oswald"><b>.heartbeat</b></i>
-                        </div>
-
-                        <!-- .-->
-                        <div>
-                        </div>
-
-                        <!-- .-->
-                        <div>
+                    <!-- .fade-and-grow -->
+                    <div class="fade-and-grow">
+                        <div class="item-fade-and-grow">
+                            <div data-text=".fade-and-grow" class="linktext-fade-and-grow">.fade-and-grow</div>
                         </div>
                     </div>
+
+                    <!-- .txt-type-->
+                    <p><b>.txt-</b>
+                        <span class="txt-type" data-wait="300" data-words='["type", "tYPE", "TypE", "Type"]'></span>
+                    </p>
+
+                    <!-- .luzz-neon -->
+                    <div class="luz-neon ">
+                        <b><span>.</span>lu<span>z</span>-n<span>e</span>o<span>n</span>
+                    </div>
+
+                    <!-- ..glitch -->
+                    <p class="glitch " data-text=".glitch">.glitch</p>
+
+                     <!-- .glitchOne-->
+                     <p class="glitchOne " data-text=".glitchOne">.glitchOne</p>
+
+                    <!-- .door -->
+                    <center>
+                    <div class="trapdoor ">
+                        <div class="top door">
+                        </div>
+                        <div class="bottom door">
+                        </div>
+                        .trapdoor
+                    </div><br><br>
+                   </center>
+                  
+
+                    
                 </section>
             </div>
         </div>
     </main>
 
-    <hr>
+  
+    <center> 
+        <div>
+        <a href="https://twitter.com/luisangelmaciel" class="  twitter-follow-button  " data-show-count="false" data-size="large" data-dnt="false"> </a>
+        
+        
+        
 
-    <center>
-        <footer>
-            <b>Toxel CSS</b>
-            <br>Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
-            <a href="https://twitter.com/luisangelmaciel" target="_blank"><b>@luisangel<span class="text-toxel">maciel</b></span></a>
-        </footer>
-    </center>
+       
+    
+    </div> 
+
+        </center>
+
+    <footer class="toxel-container">
+       Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
+                    <a href="https://github.com/luisangelmaciel" target="_blank">
+            Luis Angel Maciel</a>
+                    </footer>
+
+                   
+                    <fieldset class="rating ">
+                        Toxel CSS
+                        <input type="radio" id="star5" name="rating" value="5" class="confetti bodyconfetti " onclick="throwConfetti() " /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+
+                    
+                   
+                        
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                    <script src="js/script.js"></script>
+
 </body>
 
 </html>
 
-</html>
+
+<!-- rating
+ <footer>
+        Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
+        <a href="https://twitter.com/luisangelmaciel" target="_blank">
+            <b>@luisangel<span class="text-toxel">maciel</span></b></a>
+
+                        <div class=" toxel-container ">
+                            <script src="https://use.fontawesome.com/dca02e5d5b.js">
+                            </script>
+                            <link rel="stylesheet" href="css/normalize-5-0.min.css">
+                            <style>
+                                fieldset,
+                                label {
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                
+                                .rating {
+                                    border: none;
+                                    float: left;
+                                }
+                                
+                                .rating>input {
+                                    display: none;
+                                }
+                                
+                                .rating>label:before {
+                                    margin: 5px;
+                                    font-size: 1.25em;
+                                    font-family: FontAwesome;
+                                    display: inline-block;
+                                    content: "\f005";
+                                }
+                                
+                                .rating>.half:before {
+                                    content: "\f089";
+                                    position: absolute;
+                                }
+                                
+                                .rating>label {
+                                    color: #ddd;
+                                    float: right;
+                                }
+                                /***** CSS Magic to Highlight Stars on Hover *****/
+                                
+                                .rating>input:checked~label,
+                                /* show gold star when clicked */
+                                
+                                .rating:not(:checked)>label:hover,
+                                /* hover current star */
+                                
+                                .rating:not(:checked)>label:hover~label {
+                                    color: #FFD700;
+                                }
+                                /* hover previous stars in list */
+                                
+                                .rating>input:checked+label:hover,
+                                /* hover current star when changing rating */
+                                
+                                .rating>input:checked~label:hover,
+                                .rating>label:hover~input:checked~label,
+                                /* lighten current selection */
+                                
+                                .rating>input:checked~label:hover~label {
+                                    color: #FFED85;
+                                }
+                            </style>
+                            <b>Toxel CSS</b>
+
+                            <fieldset class="rating ">
+                                <input type="radio" id="star5" name="rating" value="5" class="confetti bodyconfetti " onclick="throwConfetti() " /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+
+                            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                        </div>
+
+                        </footer>
+                        -->
+                        <!-- firma 
+    <center>
+     
+        <style>
+            .heartbeat {
+                color: #e80d2e;
+                text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px white, 0 0 5px rgb(197, 155, 160);
+                animation: heartbeat 36s infinite;
+            }
+            
+            .heartbeat:hover {
+                color: #017db0;
+                text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px white, 0 0 5px rgb(177, 227, 240);
+                animation: heartbeat 36s infinite;
+            }
+            /*Beating heart animation keyframe*/
+            
+            @keyframes heartbeat {
+                0% {
+                    transform: scale(1.0);
+                }
+                5% {
+                    transform: scale(1.3);
+                }
+                10% {
+                    transform: scale(1.1);
+                }
+                20% {
+                    transform: scale(1.5);
+                }
+                30% {
+                    transform: scale(1.0);
+                }
+                100% {
+                    transform: scale(1.0);
+                }
+            }
+            
+            .text-toxel {
+                color: #017db0;
+            }
+        </style>
+
+
+        <footer>
+            <b>Toxel CSS</b><br>
+                        <br>Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
+                        <a href="https://twitter.com/luisangelmaciel" target="_blank"><b>@luisangel<span class="text-toxel">maciel</b></span></a>
+
+                        </footer>
+                        </center>
+                        firma lnks.tools/cBAfkF -->
+                        <!-- background  linear gradient 
+    <style>
+        background: linear-gradient(to right, #083D77, #017db0);             
+    </style>
+-->
+                        <!--  background + url
+    <style>
+        background: var(--color-darkblue);
+        background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(18, 18, 71, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    </style>
+-->
+                        <!-- background  linear gradient 
+    <style>
+        background: linear-gradient(to right, #083D77, #017db0);             
+    </style>
+-->
+                        <!--  background + url
+    <style>
+        background: var(--color-darkblue);
+        background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(18, 18, 71, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    </style>
+-->
