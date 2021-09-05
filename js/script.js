@@ -16,7 +16,7 @@ function throwConfetti() {
 
 // .txt-type
 class TypeWriter {
-    constructor(txtElement, words, wait = 3000) {
+    constructor(txtElement, words, wait = 1000) {
         this.txtElement = txtElement;
         this.words = words;
         this.txt = '';
