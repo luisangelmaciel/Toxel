@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.wrap {
+  position: relative;
+  display: block;
+  width: 150px; 
+  margin: 20px auto;
+  perspective: 200px;
+  transition: transform 0.5s ease;
+}
+.common {
+  width: 150px;
+  padding: 20px;
+  text-align: center; 
+  text-transform: uppercase;
+  font-family: Arial;
+}
+.wrap .button {
+  padding: 20px;
+  background: tomato;
+  text-align: center; 
+  text-transform: uppercase;
+  font-family: Arial;
+  color: #fff;
+  perspective-origin: 100px 20px;
+  transform-origin: left center;
+  transform-style: preserve3d;
+  transition: transform 0.5s ease;
+}
+.wrap:hover .button {
+  transform: rotateY(110deg);
+}
+
+.wrap .button2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background: lightskyblue;
+  color: #fff;
+  perspective-origin: 100px 20px;
+  transform-origin: right center;
+  transform-style: preserve3d;
+  transform: rotateY(-110deg);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.wrap:hover .button2 {
+  opacity: 1; 
+  transform: rotateY(0deg);
+}
+
+.wrap2 {
+  position: relative;
+  display: block;
+  width: 150px; 
+  margin: 20px auto;
+  perspective: 200px;
+  transition: transform 0.5s ease;
+}
+.wrap2 .button {
+  background: lightskyblue;
+  perspective-origin: 10px 100px;
+  transform-origin: center center;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+}
+.wrap2 .button2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: tomato;
+  perspective-origin: 10px 100px;
+  transform-origin: center center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+}
+.wrap2:hover .button {
+  transform: rotateY(-180deg);
+}
+.wrap2:hover .button2 {
+  transform: rotateY(0deg);
+}
+
+
+.wrap3 {
+  position: relative;
+  display: block;
+  width: 150px;
+  overflow: hidden;
+  margin: 20px auto;
+  perspective: 200px;
+  transition: transform 0.5s ease;
+}
+.wrap3 .button {
+  background: tomato;
+  border-radius: 5px 5px 0 0;
+  transform-origin: top center;
+  transition: transform 0.5s ease;
+}
+.wrap3 .button2 {
+  background: lightskyblue;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom center;
+  transform: rotateX(180deg);
+  transition: transform 0.5s ease;
+}
+.wrap3:hover .button2 {
+  color: #fff;
+  transform: rotateX(0deg);
+}
