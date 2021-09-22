@@ -22,12 +22,14 @@
     <!--  <link rel="stylesheet" href="http://luisangelmaciel.github.io/toxel/css/toxel.css"> -->
 
     <!-- rating -->
-    <link rel="stylesheet" href="css/normalize-5-0.min.css">
+    <link rel="stylesheet" href="http://luisangelmaciel.github.io/toxel/css/normalize-5-0.min.css">
 
 
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
 
     <script src="https://use.fontawesome.com/dca02e5d5b.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js ">
@@ -50,51 +52,491 @@
             <div class=" toxel-css">
 
                 <section>
+                    <!-- .hover-neon -->
+                    <style>
+                        /*Neon*/
+                        
+                        .hover-neon {
+                            text-align: center;
+                        }
+                        
+                        .a-hover-neon {
+                            text-decoration: none;
+                            transition: all 0.5s;
+                        }
+                        
+                        .hover-neon:nth-child(1) .a-hover-neon {
+                            color: #fff;
+                            font-family: Monoton;
+                            -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+                            animation: neon1 1.5s ease-in-out infinite alternate;
+                        }
+                        
+                        .hover-neon:nth-child(1) .a-hover-neon:hover {
+                            color: #ff1177;
+                            -webkit-animation: none;
+                            animation: none;
+                        }
+                        
+                        .hover-neon:nth-child(2) .a-hover-neon {
+                            color: #228dff;
+                            font-family: Iceland;
+                        }
+                        
+                        .hover-neon:nth-child(2) .a-hover-neon:hover {
+                            -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+                            animation: neon2 1.5s ease-in-out infinite alternate;
+                        }
+                        
+                        .hover-neon:nth-child(3) .a-hover-neon {
+                            color: #ffdd1b;
+                            font-family: Pacifico;
+                        }
+                        
+                        .hover-neon:nth-child(3) .a-hover-neon:hover {
+                            -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+                            animation: neon3 1.5s ease-in-out infinite alternate;
+                        }
+                        
+                        .hover-neon:nth-child(4) .a-hover-neon {
+                            color: #b6ff00;
+                            font-family: "Press Start 2P";
+                            font-size: 0.8em;
+                        }
+                        
+                        .hover-neon:nth-child(4) .a-hover-neon:hover {
+                            -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+                            animation: neon4 1.5s ease-in-out infinite alternate;
+                        }
+                        
+                        .hover-neon:nth-child(5) .a-hover-neon {
+                            color: #ff9900;
+                            font-family: Audiowide;
+                        }
+                        
+                        .hover-neon:nth-child(5) .a-hover-neon:hover {
+                            -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+                            animation: neon5 1.5s ease-in-out infinite alternate;
+                        }
+                        
+                        .hover-neon:nth-child(6) .a-hover-neon {
+                            color: #ba01ff;
+                            font-family: Vampiro One;
+                        }
+                        
+                        .hover-neon:nth-child(6) .a-hover-neon:hover {
+                            -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+                            animation: neon6 1.5s ease-in-out infinite alternate;
+                        }
+                        
+                        p .a-hover-neon:hover {
+                            color: #ffffff;
+                        }
+                        /*glow for webkit*/
+                        
+                        @-webkit-keyframes neon1 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+                            }
+                        }
+                        
+                        @-webkit-keyframes neon2 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+                            }
+                        }
+                        
+                        @-webkit-keyframes neon3 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+                            }
+                        }
+                        
+                        @-webkit-keyframes neon4 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+                            }
+                        }
+                        
+                        @-webkit-keyframes neon5 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+                            }
+                        }
+                        
+                        @-webkit-keyframes neon6 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+                            }
+                        }
+                        /*glow for mozilla*/
+                        /*glow*/
+                        
+                        @keyframes neon1 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+                            }
+                        }
+                        
+                        @keyframes neon2 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+                            }
+                        }
+                        
+                        @keyframes neon3 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+                            }
+                        }
+                        
+                        @keyframes neon4 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+                            }
+                        }
+                        
+                        @keyframes neon5 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+                            }
+                        }
+                        
+                        @keyframes neon6 {
+                            from {
+                                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+                            }
+                            to {
+                                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+                            }
+                        }
+                    </style>
+                    <div class="hover-neon">
+                        <a class="a-hover-neon">
+                         .hover-neon
+                        </a></div>
+                    <br>
+
+                    <!-- .Smoky-text -->
+                    <style>
+                        .smoky-text {
+                            display: inline-block;
+                            text-shadow: 0 0 0 black;
+                            -webkit-animation: smoky 5s 3s both;
+                            animation: smoky 5s 3s both;
+                        }
+                        
+                        .smoky-text:nth-child(even) {
+                            -webkit-animation-name: smoky-mirror;
+                            animation-name: smoky-mirror;
+                        }
+                        
+                        @-webkit-keyframes smoky {
+                            60% {
+                                text-shadow: 0 0 40px black;
+                            }
+                            to {
+                                transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+                                text-shadow: 0 0 20px black;
+                                opacity: 0;
+                            }
+                        }
+                        
+                        @keyframes smoky {
+                            60% {
+                                text-shadow: 0 0 40px black;
+                            }
+                            to {
+                                transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+                                text-shadow: 0 0 20px black;
+                                opacity: 0;
+                            }
+                        }
+                        
+                        @-webkit-keyframes smoky-mirror {
+                            60% {
+                                text-shadow: 0 0 40px black;
+                            }
+                            to {
+                                transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+                                text-shadow: 0 0 20px black;
+                                opacity: 0;
+                            }
+                        }
+                        
+                        @keyframes smoky-mirror {
+                            60% {
+                                text-shadow: 0 0 40px black;
+                            }
+                            to {
+                                transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+                                text-shadow: 0 0 20px black;
+                                opacity: 0;
+                            }
+                        }
+                        
+                        .smoky-text:nth-of-type(1) {
+                            -webkit-animation-delay: 3.1s;
+                            animation-delay: 3.1s;
+                        }
+                        
+                        .smoky-text:nth-of-type(2) {
+                            -webkit-animation-delay: 3.2s;
+                            animation-delay: 3.2s;
+                        }
+                        
+                        .smoky-text:nth-of-type(3) {
+                            -webkit-animation-delay: 3.3s;
+                            animation-delay: 3.3s;
+                        }
+                        
+                        .smoky-text:nth-of-type(4) {
+                            -webkit-animation-delay: 3.4s;
+                            animation-delay: 3.4s;
+                        }
+                        
+                        .smoky-text:nth-of-type(5) {
+                            -webkit-animation-delay: 3.5s;
+                            animation-delay: 3.5s;
+                        }
+                        
+                        .smoky-text:nth-of-type(6) {
+                            -webkit-animation-delay: 3.6s;
+                            animation-delay: 3.6s;
+                        }
+                        
+                        .smoky-text:nth-of-type(7) {
+                            -webkit-animation-delay: 3.7s;
+                            animation-delay: 3.7s;
+                        }
+                        
+                        .smoky-text:nth-of-type(8) {
+                            -webkit-animation-delay: 3.8s;
+                            animation-delay: 3.8s;
+                        }
+                        
+                        .smoky-text:nth-of-type(9) {
+                            -webkit-animation-delay: 3.9s;
+                            animation-delay: 3.9s;
+                        }
+                        
+                        .smoky-text:nth-of-type(10) {
+                            -webkit-animation-delay: 4s;
+                            animation-delay: 4s;
+                        }
+                        
+                        .smoky-text:nth-of-type(11) {
+                            -webkit-animation-delay: 4.1s;
+                            animation-delay: 4.1s;
+                        }
+                        
+                        .smoky-text:nth-of-type(12) {
+                            -webkit-animation-delay: 4.2s;
+                            animation-delay: 4.2s;
+                        }
+                        
+                        .smoky-text:nth-of-type(13) {
+                            -webkit-animation-delay: 4.3s;
+                            animation-delay: 4.3s;
+                        }
+                        
+                        .smoky-text:nth-of-type(14) {
+                            -webkit-animation-delay: 4.4s;
+                            animation-delay: 4.4s;
+                        }
+                        
+                        .smoky-text:nth-of-type(15) {
+                            -webkit-animation-delay: 4.5s;
+                            animation-delay: 4.5s;
+                        }
+                        
+                        .smoky-text:nth-of-type(16) {
+                            -webkit-animation-delay: 4.6s;
+                            animation-delay: 4.6s;
+                        }
+                        
+                        .smoky-text:nth-of-type(17) {
+                            -webkit-animation-delay: 4.7s;
+                            animation-delay: 4.7s;
+                        }
+                        
+                        .smoky-text:nth-of-type(18) {
+                            -webkit-animation-delay: 4.8s;
+                            animation-delay: 4.8s;
+                        }
+                        
+                        .smoky-text:nth-of-type(19) {
+                            -webkit-animation-delay: 4.9s;
+                            animation-delay: 4.9s;
+                        }
+                        
+                        .smoky-text:nth-of-type(20) {
+                            -webkit-animation-delay: 5s;
+                            animation-delay: 5s;
+                        }
+                        
+                        .smoky-text:nth-of-type(21) {
+                            -webkit-animation-delay: 5.1s;
+                            animation-delay: 5.1s;
+                        }
+                    </style>
+                    <span class="smoky-text">s</span>
+                    <span class="smoky-text">m</span>
+                    <span class="smoky-text">o</span>
+                    <span class="smoky-text">k</span>
+                    <span class="smoky-text">y</span>
+                    <span class="smoky-text">-</span>
+                    <span class="smoky-text">t</span>
+                    <span class="smoky-text">e</span>
+                    <span class="smoky-text">x</span>
+                    <span class="smoky-text">t</span>
+                    <br> <br>
+                    <!-- bye bye dejalo ir 
+                    <span class="smoky-text">b</span>
+                    <span class="smoky-text">y</span>
+                    <span class="smoky-text">e</span>
+                    <span class="smoky-text">,</span>
+                    <span class="smoky-text">&nbsp;</span>
+                    <span class="smoky-text">b</span>
+                    <span class="smoky-text">y</span>
+                    <span class="smoky-text">e</span>
+                    <span class="smoky-text">,</span>
+                    <span class="smoky-text">&nbsp;</span>
+                    <span class="smoky-text">d</span>
+                    <span class="smoky-text">é</span>
+                    <span class="smoky-text">j</span>
+                    <span class="smoky-text">a</span>
+                    <span class="smoky-text">l</span>
+                    <span class="smoky-text">o</span>
+                    <span class="smoky-text">&nbsp;</span>
+                    <span class="smoky-text">i</span>
+                    <span class="smoky-text">r</span>-->
+
+                    <!-- .shrink-text -->
+                    <div class="shrink-text ">
+                        <a href="#" class="shrink-text-a">
+                            <span class="shrink-span">s</span><span class="shrink-span">h</span>
+                            <span class="shrink-span">r</span><span class="shrink-span">i</span>
+                            <span class="shrink-span">n</span><span class="shrink-span">k</span>
+                            <span class="shrink-span">-</span><span class="shrink-span"></span>
+                            <span class="shrink-span">t</span><span class="shrink-span">e</span>
+                            <span class="shrink-span">x</span><span class="shrink-span">t</span>
+                        </a>
+                    </div>
+
                     <!-- .slash-color -->
                     <p class="slash-color ">.slash-color</p>
 
                     <!-- .confetti -->
-                    <div class="confetti" onclick="throwConfetti() "> .confetti <small>  ¡touch me!  </small> 🎉 </div> <br>
+                    <div class="confetti " onclick="throwConfetti() "> .confetti <small>  ¡touch me!  </small> 🎉 </div> <br>
 
-                    <!-- .heartbeat.-->
+                    <!-- .heartbeat-->
                     <b> <i class="fa fa-heart heartbeat "></i> .heartbeat </b>
 
                     <!-- .fade-and-grow -->
-                    <div class="fade-and-grow">
-                        <div class="item-fade-and-grow">
-                            <div data-text=".fade-and-grow" class="linktext-fade-and-grow">.fade-and-grow</div>
+                    <div class="fade-and-grow ">
+                        <div class="item-fade-and-grow ">
+                            <div data-text=".fade-and-grow " class="linktext-fade-and-grow ">.fade-and-grow</div>
                         </div>
                     </div>
 
                     <!-- .txt-type-->
                     <p><b>.txt-</b>
-                        <span class="txt-type" data-wait="300" data-words='["type", "tYPE", "TypE", "Type"]'></span>
+                        <span class="txt-type " data-wait="300 " data-words='["type ", "tYPE ", "TypE ", "Type "]'></span>
                     </p>
 
-                    <!-- .luzz-neon -->
+                    <!-- .luz-neon -->
                     <div class="luz-neon ">
                         <b><span>.</span>lu<span>z</span>-n<span>e</span>o<span>n</span>
                     </div>
 
                     <!-- ..glitch -->
-                    <p class="glitch " data-text=".glitch">.glitch</p>
+                    <p class="glitch " data-text=".glitch ">.glitch</p>
 
                      <!-- .glitchOne-->
-                     <p class="glitchOne " data-text=".glitchOne">.glitchOne</p>
+                     <p class="glitchOne " data-text=".glitchOne ">.glitchOne</p>
 
                     <!-- .door -->
                     <center>
-                    <div class="trapdoor ">
-                        <div class="top door">
+                        <div class="trapdoor ">
+                            <div class="top door ">
+                            </div>
+                            <div class="bottom door ">
+                            </div>
+                            .trapdoor
                         </div>
-                        <div class="bottom door">
-                        </div>
-                        .trapdoor
-                    </div><br><br>
-                   </center>
-                  
-
+                        <br><br>                    
+                    </center>
                     
+                    <!-- .underline -->
+                    <style>
+                        .a-underline {
+                            display: inline-block;
+                            position: relative;
+                            text-decoration: none;
+                            color: inherit;
+                            z-index: 1;
+                        }
+                        
+                        .a-underline::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: .07em;
+                            height: .05em;
+                            width: 100%;
+                             /* Rainbow Underline Effect 
+                            background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959); */
+                            /* Blue */
+                            background: linear-gradient(110deg, #bcddeb, #b3d8e7, #a9d4e6, #9fcee2);
+                            z-index: -1;
+                            transition: height .25s cubic-bezier(.6, 0, .4, 1);
+                        }
+                        
+                        .a-underline:hover::after {
+                            height: 1em;
+                        }
+                    </style>
+                    <a href="#" class="a-underline ">.a-underline</a>
+
+
+
+
+                    <!-- -->
+                    <style></style>
                 </section>
             </div>
         </div>
@@ -102,44 +544,36 @@
 
   
     <center> 
-        <div>
-        <a href="https://twitter.com/luisangelmaciel" class="  twitter-follow-button  " data-show-count="false" data-size="large" data-dnt="false"> </a>
-        
-        
-        
+        <a href="https://twitter.com/luisangelmaciel " class=" twitter-follow-button " data-show-count="false " data-size="large " data-dnt="false "> </a>   
+    </center>
 
-       
-    
-    </div> 
-
-        </center>
-
-    <footer class="toxel-container">
-       Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
-                    <a href="https://github.com/luisangelmaciel" target="_blank">
+    <footer class="toxel-container ">
+       Made with &nbsp; <i class="fa fa-heart heartbeat "></i> &nbsp; by
+                    <a href="https://github.com/luisangelmaciel " target="_blank ">
             Luis Angel Maciel</a>
                     </footer>
 
                    
                     <fieldset class="rating ">
                         Toxel CSS
-                        <input type="radio" id="star5" name="rating" value="5" class="confetti bodyconfetti " onclick="throwConfetti() " /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        <input type="radio " id="star5 " name="rating " value="5 " class="confetti bodyconfetti " onclick="throwConfetti() " /><label class="full " for="star5 " title="Awesome - 5 stars "></label>
+                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                        <input type="radio " id="star4 " name="rating " value="4 " /><label class="full " for="star4 " title="Pretty good - 4 stars "></label>
+                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                        <input type="radio " id="star3 " name="rating " value="3 " /><label class="full " for="star3 " title="Meh - 3 stars "></label>
+                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                        <input type="radio " id="star2 " name="rating " value="2 " /><label class="full " for="star2 " title="Kinda bad - 2 stars "></label>
+                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                        <input type="radio " id="star1 " name="rating " value="1 " /><label class="full " for="star1 " title="Sucks big time - 1 star "></label>
+                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
                     </fieldset>
 
                     
                    
                         
                     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-                    <script src="js/script.js"></script>
+                    <script src="js/script.js "></script>
+                    <!--  <script src="https://luisangelmaciel.github.io/Toxel/js/script.js "></script> -->
 
 </body>
 
@@ -148,14 +582,14 @@
 
 <!-- rating
  <footer>
-        Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
-        <a href="https://twitter.com/luisangelmaciel" target="_blank">
-            <b>@luisangel<span class="text-toxel">maciel</span></b></a>
+        Made with &nbsp; <i class="fa fa-heart heartbeat "></i> &nbsp; by
+        <a href="https://twitter.com/luisangelmaciel " target="_blank ">
+            <b>@luisangel<span class="text-toxel ">maciel</span></b></a>
 
                         <div class=" toxel-container ">
-                            <script src="https://use.fontawesome.com/dca02e5d5b.js">
+                            <script src="https://use.fontawesome.com/dca02e5d5b.js ">
                             </script>
-                            <link rel="stylesheet" href="css/normalize-5-0.min.css">
+                            <link rel="stylesheet " href="css/normalize-5-0.min.css ">
                             <style>
                                 fieldset,
                                 label {
@@ -177,11 +611,11 @@
                                     font-size: 1.25em;
                                     font-family: FontAwesome;
                                     display: inline-block;
-                                    content: "\f005";
+                                    content: "\f005 ";
                                 }
                                 
                                 .rating>.half:before {
-                                    content: "\f089";
+                                    content: "\f089 ";
                                     position: absolute;
                                 }
                                 
@@ -216,16 +650,16 @@
                             <b>Toxel CSS</b>
 
                             <fieldset class="rating ">
-                                <input type="radio" id="star5" name="rating" value="5" class="confetti bodyconfetti " onclick="throwConfetti() " /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                <input type="radio " id="star5 " name="rating " value="5 " class="confetti bodyconfetti " onclick="throwConfetti() " /><label class="full " for="star5 " title="Awesome - 5 stars "></label>
+                                <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                <input type="radio " id="star4 " name="rating " value="4 " /><label class="full " for="star4 " title="Pretty good - 4 stars "></label>
+                                <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                <input type="radio " id="star3 " name="rating " value="3 " /><label class="full " for="star3 " title="Meh - 3 stars "></label>
+                                <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                <input type="radio " id="star2 " name="rating " value="2 " /><label class="full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                <input type="radio " id="star1 " name="rating " value="1 " /><label class="full " for="star1 " title="Sucks big time - 1 star "></label>
+                                <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
                             </fieldset>
 
                             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -279,8 +713,8 @@
 
         <footer>
             <b>Toxel CSS</b><br>
-                        <br>Made with &nbsp; <i class="fa fa-heart heartbeat"></i> &nbsp; by
-                        <a href="https://twitter.com/luisangelmaciel" target="_blank"><b>@luisangel<span class="text-toxel">maciel</b></span></a>
+                        <br>Made with &nbsp; <i class="fa fa-heart heartbeat "></i> &nbsp; by
+                        <a href="https://twitter.com/luisangelmaciel " target="_blank "><b>@luisangel<span class="text-toxel ">maciel</b></span></a>
 
                         </footer>
                         </center>
