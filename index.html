@@ -52,6 +52,233 @@
             <div class=" toxel-css">
 
                 <section>
+                    <!-- .iconico-3d -->
+                    <div>
+                        <style>
+                            .iconico-3d {
+                                padding: 10px;
+                                -webkit-animation: icon3d 200ms 10;
+                                animation: icon3d 200ms 10;
+                                color: black;
+                            }
+                            
+                            .iconico-3d:hover {
+                                -webkit-animation: icon3d 200ms infinite;
+                                animation: icon3d 200ms infinite;
+                            }
+                            
+                            @keyframes icon3d {
+                                0% {
+                                    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+                                }
+                                25% {
+                                    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+                                }
+                                50% {
+                                    text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+                                }
+                                75% {
+                                    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+                                }
+                                100% {
+                                    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+                                }
+                            }
+                        </style>
+
+                        <p class="iconico-3d">.iconico-3d</p>
+
+                    </div>
+
+
+                    <!-- .open-->
+                    <div>
+                        <style>
+                            .a-open {
+                                display: inline-block;
+                                position: relative;
+                                padding: 10px 15px;
+                                margin: auto;
+                                text-decoration: none;
+                                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 0 4px #444;
+                            }
+                            /* OPEN         */
+                            /* ------------ */
+                            
+                            .a-open.open {
+                                /*         border: 1px solid #2c2c2c;*/
+                            }
+                            /* this is the cover */
+                            
+                            .a-open.open:before {
+                                /*   content: '\f062';
+                                font-family: 'FontAwesome'; */
+                                content: '.a-open';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                color: black;
+                                text-align: center;
+                                background-color: white;
+                                transition: all 500ms ease;
+                                padding: 10px 15px;
+                                border: none;
+                            }
+                            /* slide it open */
+                            
+                            .a-open.open:hover:before {
+                                bottom: calc(100% - 2px);
+                            }
+                        </style>
+                        <div><a href="#" class="a-open open">.a-open</a></div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- .type-animation-->
+                    <div id="Typing-name">
+
+
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+                        <style>
+                            .type-animation {
+                                display: inline-flex;
+                                width: 0;
+                                overflow: hidden;
+                                padding-right: 0.03em;
+                                position: relative;
+                                color: rgba(0, 0, 0, 0.788);
+                            }
+                            
+                            .type-animation:after {
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                top: -0.02em;
+                                bottom: -0.02em;
+                                width: 0.06em;
+                                border-right: 2px solid transparent;
+                            }
+                            
+                            .type-animation.animating {
+                                -webkit-animation: type 1620ms;
+                                animation: type 1620ms;
+                                -webkit-animation-fill-mode: forwards;
+                                animation-fill-mode: forwards;
+                                -webkit-animation-delay: 1s;
+                                animation-delay: 1s;
+                            }
+                            
+                            .type-animation.animating:after {
+                                -webkit-animation: cursor 320ms 8.625 ease-in-out;
+                                animation: cursor 320ms 8.625 ease-in-out;
+                            }
+                            
+                            @-webkit-keyframes cursor {
+                                0%,
+                                100% {
+                                    border-color: #f7f3ff;
+                                }
+                                50% {
+                                    border-color: #241b5b;
+                                }
+                                100% {
+                                    width: 0;
+                                }
+                            }
+                            
+                            @keyframes cursor {
+                                0%,
+                                100% {
+                                    border-color: #f7f3ff;
+                                }
+                                50% {
+                                    border-color: #241b5b;
+                                }
+                                100% {
+                                    width: 0;
+                                }
+                            }
+                            
+                            @-webkit-keyframes type {
+                                11.1111111111% {
+                                    width: 0.49em;
+                                }
+                                22.2222222222% {
+                                    width: 0.98em;
+                                }
+                                33.3333333333% {
+                                    width: 1.47em;
+                                }
+                                44.4444444444% {
+                                    width: 1.96em;
+                                }
+                                55.5555555556% {
+                                    width: 2.45em;
+                                }
+                                66.6666666667% {
+                                    width: 2.94em;
+                                }
+                                77.7777777778% {
+                                    width: 3.43em;
+                                }
+                                88.8888888889% {
+                                    width: 3.92em;
+                                }
+                                100% {
+                                    width: 3.92em;
+                                    padding-right: 0;
+                                }
+                            }
+                            
+                            @keyframes type {
+                                11.1111111111% {
+                                    width: 0.49em;
+                                }
+                                22.2222222222% {
+                                    width: 0.98em;
+                                }
+                                33.3333333333% {
+                                    width: 1.47em;
+                                }
+                                44.4444444444% {
+                                    width: 1.96em;
+                                }
+                                55.5555555556% {
+                                    width: 2.45em;
+                                }
+                                66.6666666667% {
+                                    width: 2.94em;
+                                }
+                                77.7777777778% {
+                                    width: 3.43em;
+                                }
+                                88.8888888889% {
+                                    width: 3.92em;
+                                }
+                                100% {
+                                    width: 3.30em;
+                                    padding-right: 0;
+                                }
+                            }
+                        </style>
+
+
+                        <p>.type-animation <span class="type-animation animating"><b> Toxel</b></span>Css</p>
+
+
+                        <!-- <p>Luis <span class="type-animation animating"><span style="color:white">Ángel </span></span>Maciel </p> -->
+
+
+                    </div>
+
+
+
                     <!-- .hover-neon -->
                     <style>
                         /*Neon*/
