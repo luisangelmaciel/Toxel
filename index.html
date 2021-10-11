@@ -52,6 +52,43 @@
             <div class=" toxel-css">
 
                 <section>
+
+                    <style>
+                        .shake {
+                            position: relative;
+                            -webkit-animation: custom-shake 3s ease-in-out 3s infinite;
+                            animation: custom-shake 3s ease-in-out 3s infinite;
+                            -webkit-transform: translate(0) rotate(0deg);
+                            -webkit-transform-origin: bottom;
+                            transform: translate(0) rotate(0deg);
+                            transform-origin: bottom;
+                            font-size: 30px;
+                            text-align: center;
+                            outline: none;
+                            border: none;
+                        }
+                        
+                        @keyframes custom-shake {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+                            80% {
+                                transform: rotate(0deg);
+                            }
+                            85% {
+                                transform: rotate(5deg);
+                            }
+                            95% {
+                                transform: rotate(-5deg);
+                            }
+                            100% {
+                                transform: rotate(0deg);
+                            }
+                        }
+                    </style>
+
+                    <div class="shake">.shake</div>
+
                     <!-- .iconico-3d -->
                     <div>
                         <style>
